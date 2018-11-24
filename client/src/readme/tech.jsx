@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 export default function Tech() {
   return (
@@ -10,16 +10,11 @@ export default function Tech() {
 
       <ul>
         <li>React (of course)</li>
-        <li>
-          Hooks
-          <ul>
-            <li>state</li>
-            <li>effects</li>
-          </ul>
-        </li>
-        <li>setTimeout</li>
-        <li>CSS keyframes</li>
+        <li>Node</li>
+        <li>Express</li>
+        <li>Socket.io</li>
+        <li>React Hooks</li>
       </ul>
     </div>
-  )
+  );
 }
