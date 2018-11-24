@@ -1,13 +1,10 @@
 module.exports = {
   "env": {
-    "browser": true,
     "es6": true,
     "node": true
   },
   "extends": [
     "eslint:recommended",
-    "plugin:react/recommended",
-    "standard-jsx",
   ],
   "parserOptions": {
     "ecmaFeatures": {},
@@ -32,5 +29,9 @@ module.exports = {
       "error",
       "never"
     ],
+    "arrow-parens": [
+      "error",
+      "always"
+    ]
   }
 }

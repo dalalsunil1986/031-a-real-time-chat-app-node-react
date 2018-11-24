@@ -4,17 +4,17 @@ const io = require('socket.io')(server)
 
 io.on('connection', function (client) {
   console.log('Client connected')
-  client.on('chat', data => {
+  client.on('chat', (data) => {
     console.log('Incoming chat:', data)
     io.emit('broadcast', data)
   })
 
-  client.on('join', data => {
+  client.on('join', (data) => {
     console.log('User joining:', data)
     io.emit('joined', data)
   })
 
-  client.on('disconnect', data => {
+  client.on('disconnect', () => {
     console.log('Client disconnected')
   })
 })
